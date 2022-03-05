@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>Guessing Number Game</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/emoji/48/000000/video-game-emoji.png"
+      type="image/x-icon"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body onload="init()">
+    <main>
+      <div id="welcome-screen">
+        <h2>Guess The Random Number Between 1-100</h2>
+        <img
+          src="https://img.freepik.com/free-vector/gamers-using-different-devices-playing-mobile-phone-tablet-laptop-console-cartoon-illustration_74855-14380.jpg?w=996"
+          alt=""
+        />
+
+        <section class="event-section">
+          <p>Select the difficulty</p>
+          <div class="button-wrapper">
+            <button onclick="easyMode()">Easy:10 Attempts</button>
+            <button onclick="hardMode()">Hard:10 Attempts</button>
+          </div>
+        </section>
+      </div>
+      <!-- our actual game area -->
+      <div id="game-area">
+        <div id="new-game-button">
+          <button onclick="newGameBegin()">New Game</button>
+        </div>
+      
+      <section>
+        <h3 id="text-output">Your Guess</h3>
+        <input
+          type="text"
+          placeholder="Enter Your Guess "
+          id="input-box"
+          min="1"
+          max="100"
+          onchange="compareGuess()"
+        />
+      </section>
+      <section class="stats">
+        <div class="info">
+          <p style="font-weight: bold; color: black">
+            Number Of Previous Attempts
+          </p>
+          <span id="attempts"> 0 </span>
+        </div>
+        <div class="info">
+          <p style="font-weight: bold; color: black">
+            Number Of Previous Guesses
+          </p>
+          <span id="guesses"> - </span>
+        </div>
+      </section>
+    </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
