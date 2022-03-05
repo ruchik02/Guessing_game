@@ -3,7 +3,7 @@ let computerGuess;
 let userGuess=[];
 let userOutputGuess = document.getElementById("text-output");
 let userNumberUpdate = document.getElementById("input-box");
-let audio=new Audio('./audio/1.mp3');
+let audio=new Audio('./audio/2.wav');
 // init function
 const init=()=>{
     computerGuess=Math.floor(Math.random() * 100 + 1);
@@ -18,6 +18,7 @@ const startGame=()=>{
 }
 // new game
 const startNewGame=()=>{
+    audio.play();
     document.getElementById("new-game-button").style.display="inline";
     userNumberUpdate.setAttribute("disabled",true);
 }

@@ -89,10 +89,10 @@ button:hover {
       align-items: center;
       justify-content: center;
   }
-  /* #new-game-button button{
+  #new-game-button button{
       border-radius: 0;
       margin:2rem 0;
-  } */
+  }
   input{
       border: 1px solid lightgray;
       background: transparent;
