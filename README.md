@@ -5,4 +5,4 @@ Guess number game between 1 to 100 using HTML,CSS and JAVASCRIPT
 ![2](https://user-images.githubusercontent.com/83516020/156896581-77be8ae5-c1ec-4903-9a36-ccbba967a519.png)
 ![3](https://user-images.githubusercontent.com/83516020/156896604-e2927f65-2dc5-476a-8941-8fa566b528c6.png)
 Netlify link:
-https://keen-swartz-67b845.netlify.app/
+https://guessing-game-using-js.netlify.app
